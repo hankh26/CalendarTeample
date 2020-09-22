@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoActivity"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.09.23"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_workhour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginTop="20dp"
+        android:text="근무시간"
+        android:textSize="25dp"
+        />
+
+    <Spinner
+        android:id="@+id/sp_workStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_workhour"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:entries="@array/hour"
+        />
+
+    <Spinner
+        android:id="@+id/sp_workEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sp_workStart"
+        android:layout_alignTop="@id/sp_workStart"
+        android:layout_marginLeft="40dp"
+        android:entries="@array/hour" />
+
+    <TextView
+        android:id="@+id/tv_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sp_workStart"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:text="메모"/>
+
+    <ListView
+        android:id="@+id/lv_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_memo"
+        />
+
+
+
+</RelativeLayout>
