@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MemoActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_memo_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.09.23"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_memo_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="저장"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_memo_memoStatic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_memo_save"
+        android:text="메모"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/et_memo_memo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_memo_memoStatic"
+        android:textSize="15dp"
+        android:text="이곳에 텍스트 입력"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_memo_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사진첨부"
+        android:textSize="25dp"
+        android:layout_below="@id/et_memo_memo"
+        android:layout_marginTop="15dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_memo_addPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_memo_picture"
+        android:src="@drawable/ic_insert_photo_black_24dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_memo_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_memo_picture"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+</RelativeLayout>

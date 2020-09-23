@@ -8,7 +8,7 @@
     android:padding="15dp">
 
     <TextView
-        android:id="@+id/tv_date"
+        android:id="@+id/tv_todo_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2020.09.23"
@@ -16,49 +16,68 @@
         android:layout_centerHorizontal="true"/>
 
     <TextView
-        android:id="@+id/tv_workhour"
+        android:id="@+id/tv_todo_workhour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_date"
+        android:layout_below="@+id/tv_todo_date"
         android:layout_marginTop="20dp"
         android:text="근무시간"
         android:textSize="25dp"
         />
 
-    <Spinner
-        android:id="@+id/sp_workStart"
+    <TextView
+        android:id="@+id/tv_todo_sumHour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/tv_workhour"
+        android:text="0시간"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/sp_todo_workEnd"
+        />
+
+    <Spinner
+        android:id="@+id/sp_todo_workStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_todo_workhour"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:entries="@array/hour"
         />
 
-    <Spinner
-        android:id="@+id/sp_workEnd"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/sp_workStart"
-        android:layout_alignTop="@id/sp_workStart"
+        android:textSize="25dp"
+        android:text="~"
+        android:layout_toRightOf="@+id/sp_todo_workStart"
+        android:layout_alignTop="@id/sp_todo_workStart"
+        />
+    <Spinner
+        android:id="@+id/sp_todo_workEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/sp_todo_workStart"
+        android:layout_alignTop="@id/sp_todo_workStart"
         android:layout_marginLeft="40dp"
         android:entries="@array/hour" />
 
     <TextView
-        android:id="@+id/tv_memo"
+        android:id="@+id/tv_todo_memoStatic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sp_workStart"
+        android:layout_below="@id/sp_todo_workStart"
         android:layout_marginTop="20dp"
         android:textSize="25dp"
         android:text="메모"/>
 
     <ListView
-        android:id="@+id/lv_memo"
+        android:id="@+id/lv_todo_memo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_below="@+id/tv_memo"
+        android:layout_below="@+id/tv_todo_memoStatic"
         />
 
 
