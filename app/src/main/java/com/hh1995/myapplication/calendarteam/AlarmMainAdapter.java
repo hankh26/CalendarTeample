@@ -23,7 +23,7 @@ public class AlarmMainAdapter extends RecyclerView.Adapter<AlarmMainAdapter.Cust
     @Override
     public AlarmMainAdapter.CustomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.alarm_list,parent,false);
         CustomViewHolder holder = new CustomViewHolder(view);
 
         return holder;
